@@ -2,6 +2,8 @@
 
 Number Guessing Game is a python terminal game. Users play against the computer by guessing a number that the computer randomly has chosen. The player can also decide a number and let the computer guess it. 
 
+[Here is the live version of my project](https://numberguessinggame-2f1a54198eba.herokuapp.com/)
+
 ## How to play
 
  The computer will ask the user to guess a number between 1 and 25, if the user guess a number that is too high the computer will print "You guessed too high, Guess again!". If the user guess a number that is too low, the computer will print "You guessed too low, Guess again!". If the user guess the right number the computer will print "Congratulations, You guessed right, It was (number)!"
