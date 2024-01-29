@@ -24,9 +24,9 @@ def user_guess(x):
                 user_guess = int(input(f'Make a guess between 1 and {x}:\n'))
 
                 if (user_guess < number):
-                    print('Sorry, You guessed too low, Guess again!\n')
+                    print('You guessed too low, Guess again!\n')
                 elif (user_guess > number):
-                    print('Sorry, You guessed too high, Guess again!\n')
+                    print('You guessed too high, Guess again!\n')
                 else:
                     print(f'Congratulations, You guessed right, It was {number}!\n')
             break
