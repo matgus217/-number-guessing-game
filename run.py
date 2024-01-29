@@ -31,7 +31,7 @@ def user_guess(x):
                     print(f'Congratulations, You guessed right, It was {number}!\n')
             break
         except ValueError:
-            print('Only enter numbers please, try again:')
+            print('Only numbers are allowed, Try Again:')
 
 
 def computer_guess(x):
