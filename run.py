@@ -8,13 +8,13 @@ def get_user_name():
         print('You can only guess numbers, good luck!\n')
         print("Enter your name:")
         name = input()
-        print(f"Hello {name}! Let's play!\n")
+        print(f"Hi! {name}! Let's play!\n")
         break
 
 
 def user_guess(x):
     """
-    Function that generates a random number between 1 and 25
+    Function that generates a random number between 1 and 20
     """
     while True:
         try:
@@ -24,11 +24,11 @@ def user_guess(x):
                 user_guess = int(input(f'Make a guess between 1 and {x}:\n'))
 
                 if (user_guess < number):
-                    print('Sorry you guessed too low, guess again!\n')
+                    print('Sorry, You guessed too low, guess again!\n')
                 elif (user_guess > number):
-                    print('Sorry you guessed too high, guess again!\n')
+                    print('Sorry, You guessed too high, guess again!\n')
                 else:
-                    print(f'Woho you guessed correct, it was {number}!\n')
+                    print(f'Congratulations, You guessed right, It was {number}!\n')
             break
         except ValueError:
             print('Only enter numbers please, try again:')
@@ -61,5 +61,5 @@ def computer_guess(x):
 Calling functions
 """
 get_user_name()
-user_guess(25)
-computer_guess(25)
+user_guess(20)
+computer_guess(20)
