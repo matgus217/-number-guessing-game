@@ -14,7 +14,7 @@ def get_user_name():
 
 def user_guess(x):
     """
-    Function that generates a random number between 1 and 20
+    Function that generates a random number between 1 and 25
     """
     while True:
         try:
@@ -24,9 +24,9 @@ def user_guess(x):
                 user_guess = int(input(f'Make a guess between 1 and {x}:\n'))
 
                 if (user_guess < number):
-                    print('Sorry, You guessed too low, guess again!\n')
+                    print('Sorry, You guessed too low, Guess again!\n')
                 elif (user_guess > number):
-                    print('Sorry, You guessed too high, guess again!\n')
+                    print('Sorry, You guessed too high, Guess again!\n')
                 else:
                     print(f'Congratulations, You guessed right, It was {number}!\n')
             break
@@ -61,5 +61,5 @@ def computer_guess(x):
 Calling functions
 """
 get_user_name()
-user_guess(20)
-computer_guess(20)
+user_guess(25)
+computer_guess(25)
